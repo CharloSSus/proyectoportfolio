@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "8bit";
+    src: url(../fonts/8bit.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "8bit";
+}
+
+body{
+    background-color: beige;
+}
+.yo{
+    background-image: url(../img/cerrado.png);
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+@keyframes hablar{
+    0%{background-image: url(../img/cerrado.png);}
+    100%{background-image: url(../img/abierto.png);}
+}
+.hablar{
+    animation: hablar 0.2s linear infinite;
+}
